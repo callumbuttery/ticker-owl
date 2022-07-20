@@ -1,46 +1,41 @@
 <template>
-  <div class="ma-4 pa-1">
+  <div>
     <v-card>
       <v-navigation-drawer permanent>
-        <v-list>
-          <v-list-item class="px-2">
-            <v-list-item-avatar>
-              <v-img
-                src="https://randomuser.me/api/portraits/women/85.jpg"
-              ></v-img>
-            </v-list-item-avatar>
-          </v-list-item>
-
-          <v-list-item link>
+        <v-list class="ma-4">
+          <v-list-item>
             <v-list-item-content>
-              <v-list-item-title class="text-h6">
-                Sandra Adams
-              </v-list-item-title>
-              <v-list-item-subtitle>sandra_a88@gmail.com</v-list-item-subtitle>
+              <v-icon color="green"> mdi-chart-line </v-icon>
+              <v-list-item-subtitle class="text-md-center mt-2"
+                >+10%</v-list-item-subtitle
+              >
+              <v-list-item-subtitle class="text-center mt-1"
+                >Market Performance</v-list-item-subtitle
+              >
             </v-list-item-content>
           </v-list-item>
         </v-list>
 
         <v-divider></v-divider>
 
-        <v-list nav dense>
+        <v-list nav class="ml-4">
           <v-list-item link>
             <v-list-item-icon>
-              <v-icon>mdi-folder</v-icon>
+              <v-icon>mdi-domain</v-icon>
             </v-list-item-icon>
-            <v-list-item-title>My Files</v-list-item-title>
+            <v-list-item-title>Stock Watch</v-list-item-title>
           </v-list-item>
           <v-list-item link>
             <v-list-item-icon>
-              <v-icon>mdi-account-multiple</v-icon>
+              <v-icon>mdi-currency-btc</v-icon>
             </v-list-item-icon>
-            <v-list-item-title>Shared with me</v-list-item-title>
+            <v-list-item-title>Crypto Watch</v-list-item-title>
           </v-list-item>
           <v-list-item link>
             <v-list-item-icon>
-              <v-icon>mdi-star</v-icon>
+              <v-icon>mdi-database-search</v-icon>
             </v-list-item-icon>
-            <v-list-item-title>Starred</v-list-item-title>
+            <v-list-item-title>Market Search</v-list-item-title>
           </v-list-item>
         </v-list>
       </v-navigation-drawer>
