@@ -1,14 +1,13 @@
 <template>
   <div class="ma-4 pa-1">
     <v-card>
-      <v-navigation-drawer
-        permanent
-        expand-on-hover
-      >
+      <v-navigation-drawer permanent>
         <v-list>
           <v-list-item class="px-2">
             <v-list-item-avatar>
-              <v-img src="https://randomuser.me/api/portraits/women/85.jpg"></v-img>
+              <v-img
+                src="https://randomuser.me/api/portraits/women/85.jpg"
+              ></v-img>
             </v-list-item-avatar>
           </v-list-item>
 
@@ -24,10 +23,7 @@
 
         <v-divider></v-divider>
 
-        <v-list
-          nav
-          dense
-        >
+        <v-list nav dense>
           <v-list-item link>
             <v-list-item-icon>
               <v-icon>mdi-folder</v-icon>
@@ -57,7 +53,6 @@
 
 export default {
   name: "Home",
-  components: {
-  },
+  components: {},
 };
 </script>
