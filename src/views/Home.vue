@@ -37,6 +37,24 @@
             </v-list-item-icon>
             <v-list-item-title>Market Search</v-list-item-title>
           </v-list-item>
+          <v-list-item link>
+            <v-list-item-icon>
+              <v-icon>mdi-database-search</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title>Index Tracker</v-list-item-title>
+          </v-list-item>
+          <v-list-item link>
+            <v-list-item-icon>
+              <v-icon>mdi-database-search</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title>Ticker Performance</v-list-item-title>
+          </v-list-item>
+          <v-list-item link>
+            <v-list-item-icon>
+              <v-icon>mdi-database-search</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title>Coin Performance</v-list-item-title>
+          </v-list-item>
         </v-list>
       </v-navigation-drawer>
     </v-card>
