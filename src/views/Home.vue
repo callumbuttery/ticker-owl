@@ -18,42 +18,12 @@
 
         <v-divider></v-divider>
 
-        <v-list nav class="ml-4">
+        <v-list nav class="ml-4" v-for="item in items" :key="item.title">
           <v-list-item link>
             <v-list-item-icon>
-              <v-icon>mdi-domain</v-icon>
+              <v-icon>{{ item.icon }}</v-icon>
             </v-list-item-icon>
-            <v-list-item-title>Stock Watch</v-list-item-title>
-          </v-list-item>
-          <v-list-item link>
-            <v-list-item-icon>
-              <v-icon>mdi-currency-btc</v-icon>
-            </v-list-item-icon>
-            <v-list-item-title>Crypto Watch</v-list-item-title>
-          </v-list-item>
-          <v-list-item link>
-            <v-list-item-icon>
-              <v-icon>mdi-database-search</v-icon>
-            </v-list-item-icon>
-            <v-list-item-title>Market Search</v-list-item-title>
-          </v-list-item>
-          <v-list-item link>
-            <v-list-item-icon>
-              <v-icon>mdi-database-search</v-icon>
-            </v-list-item-icon>
-            <v-list-item-title>Index Tracker</v-list-item-title>
-          </v-list-item>
-          <v-list-item link>
-            <v-list-item-icon>
-              <v-icon>mdi-database-search</v-icon>
-            </v-list-item-icon>
-            <v-list-item-title>Ticker Performance</v-list-item-title>
-          </v-list-item>
-          <v-list-item link>
-            <v-list-item-icon>
-              <v-icon>mdi-database-search</v-icon>
-            </v-list-item-icon>
-            <v-list-item-title>Coin Performance</v-list-item-title>
+            <v-list-item-title>{{ item.title }}</v-list-item-title>
           </v-list-item>
         </v-list>
       </v-navigation-drawer>
@@ -67,5 +37,36 @@
 export default {
   name: "Home",
   components: {},
+  data() {
+    return {
+      items: [
+        {
+          title: "Stock Watch",
+          icon: "mdi-domain",
+          color: "green",
+        },
+        {
+          title: "Crypto Watch",
+          icon: "mdi-currency-btc",
+          color: "green",
+        },
+        {
+          title: "Index Tracker",
+          icon: "mdi-database-search",
+          color: "green",
+        },
+        {
+          title: "Stock Performers",
+          icon: "mdi-chart-line",
+          color: "green",
+        },
+        {
+          title: "Crypto Performers",
+          icon: "mdi-chart-line",
+          color: "green",
+        },
+      ],
+    };
+  },
 };
 </script>
